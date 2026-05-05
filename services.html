@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | King and Knights Chess Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-950 text-slate-200 font-['Inter']">
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex justify-between items-center backdrop-blur-md bg-slate-950/70 border-b border-slate-800"
+    >
+      <div
+        class="text-2xl font-['Playfair_Display'] font-bold text-amber-400 tracking-tight cursor-pointer"
+      >
+        King & Knights <span class="text-white">Academy</span>
+      </div>
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="index.html" class="nav-link active text-amber-400">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </div>
+      <div
+        class="md:hidden text-amber-400 text-3xl cursor-pointer"
+        id="menu-btn"
+      >
+        ☰
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="fixed inset-0 z-40 bg-slate-950 hidden flex-col items-center justify-center space-y-8 text-2xl font-medium"
+    >
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html" class="text-amber-400">Contact Us</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-[60vh] flex items-center justify-center px-6 overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <div
+          class="absolute top-1/4 left-1/4 w-64 h-32 bg-amber-500/10 rounded-full blur-3xl"
+        ></div>
+      </div>
+      <div class="relative z-10 text-center reveal">
+        <h1
+          class="text-5xl md:text-7xl font-['Playfair_Display'] font-bold text-white"
+        >
+          Our <span class="text-amber-400">Services</span>
+        </h1>
+        <br />
+        <p class="text-slate-400 text-center max-w-2xl mx-auto leading-relaxed">
+          Our services are designed to support students at different stages of
+          their chess and cognitive development, combining structure, clarity
+          and individual attention.
+        </p>
+        <br />
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="px-6 md:px-12">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="p-4 bg-slate-800/50 border border-slate-700 rounded-3xl hover:border-amber-500 transition-all reveal group"
+        >
+          <div
+            class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block"
+          >
+            🏆
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-4">
+            Premium One on One Coaching
+          </h3>
+          <p class="text-slate-400 mb-6">
+            A bespoke training experience tailored to each student's cognitive
+            strengths and strategic needs.
+          </p>
+          <ul class="text-slate-300 space-y-2 text-sm">
+            <li>• Personalized lesson architecture</li>
+            <li>• Analysis sessions</li>
+            <li>• Structured homework</li>
+            <li>• Monthly performance evaluation</li>
+          </ul>
+        </div>
+        <div
+          class="p-8 bg-slate-800/50 border border-slate-700 rounded-3xl hover:border-amber-500 transition-all reveal group"
+        >
+          <div
+            class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block"
+          >
+            👥
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">
+            Elite Group Coaching
+          </h3>
+          <p class="text-slate-400">
+            Very small carefully curated groups to maximize growth, engagement
+            and competitive learning.
+          </p>
+        </div>
+        <div
+          class="p-8 bg-slate-800/50 border border-slate-700 rounded-3xl hover:border-amber-500 transition-all reveal group"
+        >
+          <div
+            class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block"
+          >
+            🌐
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">
+            Community-Based Programs
+          </h3>
+          <p class="text-slate-400">
+            Join a local network of thinkers and enthusiasts dedicated to
+            learning and growing together. From first moves to advanced
+            maneuvers, find your place in the local chess scene.
+          </p>
+        </div>
+        <div
+          class="p-8 bg-slate-800/50 border border-slate-700 rounded-3xl hover:border-amber-500 transition-all reveal group"
+        >
+          <div
+            class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block"
+          >
+            ⚔️
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">
+            Tournament Mastery Program
+          </h3>
+          <p class="text-slate-400 mb-6">
+            For students who want to dominate competitive play.
+          </p>
+          <ul class="text-slate-300 space-y-2 text-sm">
+            <li>• Game psychology</li>
+            <li>• Time control mastery</li>
+
+            <li>• Pre tournament preparation</li>
+            <li>• Post match analysis</li>
+          </ul>
+        </div>
+        <div
+          class="p-8 bg-slate-800/50 border border-slate-700 rounded-3xl hover:border-amber-500 transition-all reveal group md:col-span-2"
+        >
+          <div
+            class="text-4xl mb-6 group-hover:scale-110 transition-transform inline-block"
+          >
+            👦
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-4">
+            Children’s Excellence Program
+          </h3>
+          <p class="text-slate-400">
+            Designed for ages 5–15. A balance of structure, discipline,
+            creativity and fun while forming strong intellectual habits.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section class="py-24 px-6 md:px-12 bg-slate-900/50">
+      <div class="max-w-6xl mx-auto">
+        <h2
+          class="text-4xl font-['Playfair_Display'] text-center text-white mb-16 reveal"
+        >
+          Investment in Excellence
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="p-8 bg-slate-800 border border-slate-700 rounded-3xl text-center reveal hover:scale-105 transition-transform flex flex-col h-full"
+          >
+            <h4 class="text-xl font-bold text-white mb-4">
+              Online Private Coaching
+            </h4>
+            <div class="text-3xl font-bold text-amber-400 mb-6">
+              $40 <span class="text-sm text-slate-400">/ hr</span>
+            </div>
+            <ul class="text-slate-400 space-y-4 mb-8 text-left flex-grow">
+              <li>• $160 (4 sessions)</li>
+              <li>• $320 (8 sessions)</li>
+              <li>
+                • One-on-One instruction tailored to each student's learning
+                pace, strengths and goals.
+              </li>
+              <li>• Delivered live online</li>
+            </ul>
+            <div class="space-y-3 mt-auto">
+              <!-- 1 HOUR (SUBTLE OPTION) -->
+              <a
+                href="https://buy.stripe.com/28EeVe1edeEv7sZbVY2oE07"
+                target="_blank"
+                class="block w-full py-3 border border-slate-600 text-slate-300 font-semibold rounded-xl hover:bg-slate-700 transition-colors text-center"
+              >
+                Book 1 Hour ($40)
+              </a>
+
+              <!-- 4 SESSIONS (PRIMARY) -->
+              <a
+                href="https://buy.stripe.com/14A28s9KJ3ZR9B7f8a2oE06"
+                target="_blank"
+                class="block w-full py-3 bg-amber-500 text-slate-950 font-bold rounded-xl hover:bg-amber-400 transition-colors text-center"
+              >
+                Enroll – 4 Sessions ($160)
+              </a>
+
+              <!-- 8 SESSIONS (SECONDARY) -->
+              <a
+                href="https://buy.stripe.com/6oU00k1ed9kb28FaRU2oE05"
+                target="_blank"
+                class="block w-full py-3 bg-slate-700 text-white font-bold rounded-xl hover:bg-slate-600 transition-colors text-center"
+              >
+                Enroll – 8 Sessions ($320)
+              </a>
+            </div>
+          </div>
+          <div
+            class="p-8 bg-slate-800 border-2 border-amber-500 rounded-3xl text-center reveal relative hover:scale-105 transition-transform flex flex-col h-full"
+          >
+            <div
+              class="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full"
+            >
+              MOST POPULAR
+            </div>
+            <h4 class="text-xl font-bold text-white mb-4">
+              Online Group Coaching
+            </h4>
+            <div class="text-3xl font-bold text-amber-400 mb-6">
+              $25 <span class="text-sm text-slate-400">/ hr</span>
+            </div>
+            <ul class="text-slate-400 space-y-4 mb-8 text-left flex-grow">
+              <li>• $100 (4 sessions)</li>
+              <li>• $200 (8 sessions)</li>
+              <li>
+                • Small, structured groups designed to encourage discipline,
+                collaboration and analytical thinking.
+              </li>
+              <li>• Delivered live online</li>
+            </ul>
+            <div class="space-y-3 mt-auto">
+              <!-- 1 HOUR -->
+              <a
+                href="https://buy.stripe.com/00w7sM3mleEv4gN3ps2oE08"
+                target="_blank"
+                class="block w-full py-3 border border-slate-600 text-slate-300 font-semibold rounded-xl hover:bg-slate-700 transition-colors text-center"
+              >
+                Book 1 Hour ($25)
+              </a>
+
+              <!-- 4 SESSIONS -->
+              <a
+                href="https://buy.stripe.com/cNicN60a9bsjcNj1hk2oE0a"
+                target="_blank"
+                class="block w-full py-3 bg-amber-500 text-slate-950 font-bold rounded-xl hover:bg-amber-400 transition-colors text-center"
+              >
+                Enroll – 4 Sessions ($100)
+              </a>
+
+              <!-- 8 SESSIONS -->
+              <a
+                href="https://buy.stripe.com/8x27sMe0ZfIz4gN7FI2oE09"
+                target="_blank"
+                class="block w-full py-3 bg-slate-700 text-white font-bold rounded-xl hover:bg-slate-600 transition-colors text-center"
+              >
+                Enroll – 8 Sessions ($200)
+              </a>
+            </div>
+          </div>
+          <div
+            class="p-8 bg-slate-800 border border-slate-700 rounded-3xl text-center reveal hover:scale-105 transition-transform flex flex-col h-full"
+          >
+            <h4 class="text-xl font-bold text-white mb-4">
+              In-Person Community & Institutional Programs
+            </h4>
+            <div class="text-2xl font-bold text-amber-400 mb-6">
+              Pricing provided upon consultation (no public rates)
+            </div>
+            <ul class="text-slate-400 space-y-4 mb-8 text-left flex-grow">
+              <li>• Schools</li>
+              <li>• MDUs / residential</li>
+              <li>• Communities & enrichment organizations</li>
+              <li>• Customized Programs</li>
+            </ul>
+            <a
+              href="contact.html"
+              class="block w-full py-3 bg-amber-500 text-slate-950 font-bold rounded-xl hover:bg-amber-400 transition-colors px-1"
+            >
+              Request Program Details</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-12 px-6 border-t border-slate-800 text-center text-slate-500"
+    >
+      <p class="text-sm text-slate-400">
+        © King & Knights Chess Academy. All rights Reserved<br />
+        See our
+        <a href="terms.html" class="text-emerald-400 hover:underline"
+          >Terms & Conditions</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
